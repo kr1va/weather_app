@@ -1,0 +1,209 @@
+/*default styles*/
+@font-face {
+}/*imports*/
+body {
+    background: #498CEC !important;
+}
+
+.header__city {
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-size: 3rem;
+}
+
+.header__measure {
+    opacity: 0.4;
+    font-size: 1.5rem;
+    line-height: 1rem;
+}
+
+.header__selector__btn {
+    font-family: "Segoe UI";
+    opacity: 0.4;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.header__selector__btn:hover {
+    cursor: pointer;
+}
+
+.--active {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.header__link {
+    font-size: 1rem;
+    color: #ffffff;
+    opacity: 0.4;
+}
+
+.header__link:hover {
+    text-decoration: none;
+    color: white;
+    opacity: 1;
+}
+
+.header__nav__popup {
+    background: #498CEC !important;
+    font-size: 1.7rem;
+    border: 0px !important;
+}
+
+input.city {
+    background: #f8f9fa;
+    font-size: 1.2rem;
+    border: none;
+    color: #2b2b2b;
+    margin-bottom: 15px;
+}
+
+input.city:focus {
+    outline: none !important;
+}
+
+input.city::-webkit-input-placeholder {
+    color: black;
+}
+
+input.city::-moz-placeholder {
+    color: black;
+}
+
+input.city:-ms-input-placeholder {
+    color: black;
+}
+
+input.city::-ms-input-placeholder {
+    color: black;
+}
+
+input.city::placeholder {
+    color: black;
+}
+
+.form__search {
+    font-size: 1.2rem !important;
+}
+
+@media (max-width: 400px) {
+    body {
+        background: #498CEC !important;
+    }
+
+    .header__city {
+        font-size: 2rem !important;
+        font-weight: 400 !important;
+        line-height: 37px !important;
+        margin-top: 19px !important;
+        margin-right: 19px !important;
+    }
+
+    .header__selector__btn {
+        font-size: 1rem !important;
+        font-weight: 400 !important;
+    }
+
+    .header__link {
+        font-size: 1rem !important;
+    }
+
+    .header__nav__popup {
+        background: #498CEC !important;
+        font-size: 0.7rem !important;
+    }
+
+    input.city {
+        background: #498CEC !important;
+        font-size: 1.2rem !important;
+        border: none !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4) !important;
+        margin-bottom: 5px !important;
+    }
+
+    input.city::-webkit-input-placeholder {
+        color: white;
+    }
+
+    input.city::-moz-placeholder {
+        color: white;
+    }
+
+    input.city:-ms-input-placeholder {
+        color: white;
+    }
+
+    input.city::-ms-input-placeholder {
+        color: white;
+    }
+
+    input.city::placeholder {
+        color: white;
+    }
+}
+
+.main__content {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.main__weather__img {
+    width: 9rem;
+    height: 9rem;
+}
+
+.main__content__weather__number {
+    color: #ffffff;
+    font-size: 7.2rem;
+    font-weight: 400;
+}
+
+.main__weather__state {
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-size: 2rem;
+}
+
+.main__weather__city {
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-size: 2rem;
+}
+
+@media (max-width: 400px) {
+    .main__content {
+        margin-top: 120px !important;
+        margin-bottom: 120px !important;
+    }
+
+    .main__content__weather__icon {
+        font-size: 70px;
+    }
+
+    .main__content__weather__number {
+        font-size: 6rem !important;
+    }
+
+    .main__weather__state {
+        font-size: 1.5rem !important;
+    }
+}
+
+.footer__info_text {
+    font-size: 1rem;
+    opacity: 0.6;
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.footer__info_content {
+    z-index: 4;
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-size: 1.2rem;
+    font-weight: 400;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  </head>
+  <body>
+    <div class="container">
+<header class="">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 m-0">
+      <div class="header__city d-flex justify-content-between mx-0">
+        <div class="d-md-none">
+          <span class="d-block cityName" id="">   </span>
+        </div>
+        <div class="d-none d-md-flex mt-4 bg-light rounded">
+          <input  class="p-0 my-0 mx-2 city" placeholder="Город..."></input>
+          <a class="btn btn-sm form__search border-0 citySearch text-primary" >Найти</a>
+        </div>
+        <!-- <span id="cityName">Krasnodar</span> -->
+        <div class="header__selector d-flex mr-0 mt-md-2">
+          <span class="header__measure mt-3 mr-1">º</span>
+          <div class="header__selector__btn --active h-75 px-1 py-1 mt-2 border border-light rounded-left">
+            C
+          </div>
+          <div class="header__selector__btn  h-75 px-1 py-1 mt-2 border border-light rounded-right">
+          F
+          </div>
+        </div>
+      </div>
+      <div class="header__nav d-flex d-md-none justify-content-between">
+        <div class="d-inline-block ">
+          <div class="dropdown show ">
+            <a class=" header__link dropdown-toggle  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Сменить город
+            </a>
+            <div class="dropdown-menu m-0 p-0 text-center header__nav__popup" aria-labelledby="dropdownMenuLink">
+              <div class="header__nav__popup py-1">
+              <input  class="p-0 d-inline text-white city" placeholder="Город..."></input>
+              <button class="btn btn-sm btn-outline-light form__search px-1 m-0 text-white citySearch">Найти</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-inline-block ">
+          <a class="header__link d-inline-block d-sm-none" href=""><i class="header__link fas fa-location-arrow mr-1"></i>Мое местоположение</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="">
+  <div class="row">
+    <div class="col-sm-12 col-md-12  main__content">
+      <div class="main__weather__city text-center d-none d-md-block cityName" >
+
+      </div>
+  <div class="main__weather d-flex justify-content-center mx-auto">
+    <img class="main__weather__img" src="http://openweathermap.org/img/wn/01d@2x.png" alt="weather icon here" id="weatherIcon">
+    <p class="main__content__weather__number d-inline-block" id="weatherDegrees"></p><p class="main__content__weather__number d-inline-block">º</p>
+  </div>
+  <div class="main__weather__state d-block text-center" id="weatherDescription">
+
+  </div>
+</div>
+</div>
+
+</main>
+<footer class="row">
+  <div class="col-6 col-md-3">
+<p class="footer__info_text mb-1">
+  Ветер
+</p>
+<p class="footer__info_content mb-1" id="wind">
+
+</p>
+  </div>
+  <div class="col-6 col-md-3 ">
+    <p class="footer__info_text mb-1">
+      Давление
+    </p>
+    <p class="footer__info_content mb-1" id="pressure">
+
+    </p>
+  </div>
+  <div class="col-6 col-md-3">
+    <p class="footer__info_text mb-1">
+      Влажность
+    </p>
+    <p class="footer__info_content mb-1" id="humidity">
+
+    </p>
+  </div>
+  <div class="col-6 col-md-3">
+    <p class="footer__info_text mb-1">
+      Верояность дождя
+    </p>
+    <p class="footer__info_content mb-1" id="rainChance">
+         
+    </p>
+  </div>
+</footer>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="./assets/js/app.js"></script>
+  </body>
+</html>

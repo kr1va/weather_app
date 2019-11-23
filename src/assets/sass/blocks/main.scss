@@ -1,0 +1,70 @@
+
+.main__content {
+  margin-top: 80px;
+      margin-bottom: 80px;
+}
+.main__weather {
+  // border: 1px solid lightblue;
+}
+
+.main__weather__img {
+  // padding: -20px;
+  width:9rem;
+  height:9rem;
+}
+
+// .main__content__weather__icon {
+//   font-size: 70px;
+//   color: white;
+//   opacity: 0.6;
+// }
+
+.main__content__weather__number {
+color: #ffffff;
+font-size: 7.2rem;
+font-weight: 400;
+// line-height: 120px;
+
+}
+
+.main__weather__state {
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-size: 2rem;
+
+    // font-weight: 400;
+    // line-height: 120px;
+}
+
+.main__weather__city {
+  color: #ffffff;
+  font-family: "Segoe UI";
+  font-size: 2rem;
+}
+
+@media (max-width: 400px) {
+  .main__content {
+    margin-top: 120px !important;
+    margin-bottom: 120px !important;
+  }
+
+  .main__content__weather__icon {
+    font-size: 70px;
+  }
+
+  .main__content__weather__number {
+  font-size: 6rem !important;
+
+  }
+
+.main__weather__img {
+  // width:100px !important;
+  // height:100px !important;
+}
+
+.main__weather__state {
+  font-size: 1.5rem !important;
+  // margin-bottom: 120px !important;
+
+}
+}

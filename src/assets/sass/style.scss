@@ -1,0 +1,33 @@
+// @import url(sass/vendors/bootstrap.css);
+/*default styles*/
+@font-face{
+// font-family: 'Proxima Nova';
+// src: url('../fonts/ProximaNova-Regular.eot');
+// src: url('../fonts/ProximaNova-Regular.eot?iefix') format('eot'),
+// url('../fontsProximaNova-Regular.woff') format('woff'),
+// url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
+}
+
+// body {
+//   background: #498CEC;
+// }
+// @media (max-width: 1000px) {
+//   body {
+//     background: olive !important;
+//   }
+// }
+// @media (max-width: 600px) {
+//   body {
+//     background: green !important;
+//   }
+// }
+
+
+
+
+/*imports*/
+// @import "blocks/bootstrap.min";
+// @import "blocks/faall.min.css";
+@import "blocks/header";
+@import "blocks/main";
+@import "blocks/footer";
